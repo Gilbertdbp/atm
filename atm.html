@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bank Siu</title>
+    <style>
+      body {
+        background-color: #464343;
+      }
+      #depositarDinero::placeholder {
+        color: rgb(69, 69, 69);
+      }
+        #retirarDinero::placeholder {
+        color: rgb(69, 69, 69);
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1>Bienvenido a tu cuenta</h1>
+    <p>
+      <input type="button" style="background-color: rgb(110, 110, 149);" value="Consultar saldo" id="consultarDinero" />
+      <button onclick="refrescarPagina();" style="background-color: rgb(110, 110, 149);">Limpiar</button>
+      <button onclick="salir();" id="out" style="background-color: rgb(110, 110, 149);">salir</button>
+    </p>
+    <p><img src="images/Atm.jpg" /></p>
+    <p>
+      <input type="number" style="background-color: rgb(110, 110, 149);" id="depositarDinero" placeholder="Cantidad a depositar">
+      <input type="button" style="background-color: rgb(110, 110, 149);" value="Depositar" id="depositar" />
+    </p>
+    <p>
+      <input type="number" style="background-color: rgb(110, 110, 149);" id="retirarDinero" placeholder="Cantidad a retirar"/>
+      <input type="button" style="background-color: rgb(110, 110, 149);" value="Retirar" id="retirar" />
+    </p>
+    <p id="resultadoRetiro"></p>
+    <p id="resultadoSaldo"></p>
+
+    <script src="classatm.js"></script>
+    <script src="atm.js"></script>
+  </body>
+</html>
